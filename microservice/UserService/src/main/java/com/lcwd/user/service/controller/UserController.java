@@ -27,6 +27,7 @@ public class UserController {
        return ResponseEntity.status(HttpStatus.CREATED).body(user1);
     }
 
+    //int retryCount = 1;
     @GetMapping("/{userId}")
     //@CircuitBreaker(name="ratingHotelBreaker", fallbackMethod = "ratingHotelFallback")
     //@Retry(name="serviceHotelRetry", fallbackMethod = "ratingHotelFallback")

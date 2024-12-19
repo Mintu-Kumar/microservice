@@ -27,6 +27,6 @@ spring:
 
 okta:
   oauth2:
-    issuer: https://dev-21286665.okta.com/oauth2/default
+    issuer: https://dev-32921400.okta.com/oauth2/default
     audience: api://default
 

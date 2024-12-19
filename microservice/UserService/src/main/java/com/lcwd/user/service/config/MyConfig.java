@@ -28,7 +28,7 @@ public class MyConfig {
     private  OAuth2AuthorizedClientRepository oAuth2AuthorizedClientRepository;
     // this bean is declare for to call another service from user service you can check UserServiceImpl class
     @Bean
-    @LoadBalanced
+    @LoadBalanced // Added this annotation to tell the spring user service name instead of localhost example    localhost:8080 - USER-SERVICE
     public RestTemplate restTemplate()
     {
         RestTemplate restTemplate = new RestTemplate();

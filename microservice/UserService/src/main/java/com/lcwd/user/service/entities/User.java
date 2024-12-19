@@ -28,6 +28,8 @@ public class User {
     @Column(name="ABOUT")
     private String about;
 
+    //We do not want to store in database thats why we use @Transient,
+    // except this all the above entity will be save in database
     @Transient
     private List<Rating> ratings = new ArrayList<>();
 

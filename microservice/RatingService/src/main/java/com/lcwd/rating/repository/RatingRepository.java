@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface RatingRepository extends JpaRepository<Rating, String> {
 
+    // Below are custom find method and UserId is column name like findBy+Column name
     List<Rating> findByUserId(String userId);
     List<Rating> findByHotelId(String hotelId);
 }
