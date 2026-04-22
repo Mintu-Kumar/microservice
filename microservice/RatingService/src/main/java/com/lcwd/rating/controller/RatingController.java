@@ -18,7 +18,7 @@ public class RatingController {
     @Autowired
     private RatingService ratingService;
 
-    @PreAuthorize("hasAuthority('Admin')" )   // this is for restrict to access other than Admin roles for that we 've added @EnableGlobalMethodSecurity int securityConfig file
+    //@PreAuthorize("hasAuthority('Admin')" )   // this is for restrict to access other than Admin roles for that we 've added @EnableGlobalMethodSecurity int securityConfig file
     @PostMapping
     public ResponseEntity<Rating> create(@RequestBody Rating rating)
     {

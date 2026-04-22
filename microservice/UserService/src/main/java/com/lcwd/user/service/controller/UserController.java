@@ -49,7 +49,6 @@ public class UserController {
                 .userId("3243243")
                 .build();
         return new ResponseEntity<>(user,HttpStatus.OK);
-
     }
 
     @GetMapping
